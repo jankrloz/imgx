@@ -1,0 +1,88 @@
+body{
+	background-color: #ecf0f1;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.bgs, .bg{
+    position:absolute;
+    top:0;
+    display:none;
+    width:100%;
+    height:100%;
+}
+
+#descr{
+	text-align: right;
+	padding-top: 80px;
+}
+
+#btn{
+    text-align: center;
+    margin-top: 150px;
+}
+
+#workspace{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.toolbar-row, .toolbar-col{
+    height: 100%;
+}
+
+.toolbar-col{
+    width: auto !important;
+}
+
+.toolbar{
+    padding: 2px;
+    background-color: #34495e;
+    width: 50px;
+    height: 100%;
+}
+
+.btn-tool{
+    margin-bottom: 2px;
+    font-size: 10pt;
+    text-align: center;
+    width: 46px;
+}
+
+.bs, .us{
+    display: none;
+}
+
+#imgDisplay
+{
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#canvas
+{
+    display: block;
+
+    margin: 20px auto;
+    vertical-align: middle;
+    background-color: #E0E0E0;
+}
+
+#right_bar{
+    background-color: #34495e;
+    height: 100%;
+    float: right;
+    color: #e0e0e0;
+    font-size: 9pt !important;
+    font-weight: 300;
+}
+
+#testmodal{
+    z-index: -1;
+}

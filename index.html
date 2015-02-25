@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>IMGX | DISCOVER NEW IMAGE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Loading Bootstrap -->
+	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Loading Flat UI -->
+	<link href="css/flat-ui.css" rel="stylesheet">
+
+	<!-- Loading User CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+  
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  	<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+			  	<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a class="navbar-brand" href="#">IMGX</a>
+	  	</div>
+	  	<div class="collapse navbar-collapse" id="navbar-collapse-01">
+			<ul class="nav navbar-nav">
+			  	<li>
+			  		<div class="btn-group">
+					  	<button style="height: 53px" class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
+					    	File
+					  	</button>
+					  	<ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+					    	<li id="open-menu">
+					    		<a href="#">Open</a>
+					    		<input id="input-image" type="file" style="display:none" accept="image/*">
+					    	</li>
+						    <li><a href="#">Save</i></a></li>
+						    <li><a href="#">Save As</a></li>
+						    <li class="divider"></li>
+						    <li><a href="#">Exit</a></li>
+					  	</ul>
+					</div>
+				</li>
+				<li>
+			  		<div class="btn-group">
+					  	<button style="height: 53px" class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
+					    	Edit
+					  	</button>
+					  	<ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+					    	<li class="histogram-tool"><a href="#">View Histogram</a></li>
+					  	</ul>
+					</div>
+				</li> 
+				<li>
+			  		<div class="btn-group">
+					  	<button style="height: 53px" class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
+					    	Help
+					  	</button>
+					  	<ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+					    	<li><a href="#">About Us</a></li>
+						    <li><a href="#" class="about-imgx">About IMGX</a></li>
+					  	</ul>
+					</div>
+				</li>
+			</ul>
+	  	</div><!-- /.navbar-collapse -->
+	</nav><!-- /navbar -->
+
+	<div id="home">
+		<img alt="" class="bgs" src="img/2.jpg">
+		<img alt="" class="bgs" src="img/9.jpg">
+		<img alt="" class="bgs" src="img/7.jpg">
+		<img alt="" class="bgs" src="img/15.png">
+		<img alt="" class="bgs" src="img/10.jpg">
+		<img alt="" class="bgs" src="img/4.jpg">
+		<img alt="" class="bgs" src="img/11.jpg">
+		<img alt="" class="bgs" src="img/13.png">
+		<img alt="" class="bgs" src="img/5.jpg">
+		<img alt="" class="bgs" src="img/12.jpg">
+		<img alt="" class="bgs" src="img/6.jpg">
+		<img alt="" class="bgs" src="img/3.jpg">
+		<img alt="" class="bgs" src="img/14.png">
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 ">
+					<h1>DISCOVER NEW IMAGE</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="lead" id="descr">IMGX PROVIDES A MULTI-TOOL ANALYZING<br/>IMAGES, LET'S START</p>
+				</div>
+			</div>
+            <div class="row">
+                <div id="btn"class="col-xs-12">
+                    <button id="btn-begin" class="btn btn-embossed btn-hg btn-primary">
+                        BEGIN
+                    </button>
+                </div>
+            </div>
+		</div>	
+
+	</div>
+
+	<div id="workspace">
+		<div class="row toolbar-row">
+			<div class="col-xs-1 toolbar-col">
+				<div class="toolbar">
+					<button class="btn btn-inverse btn-tool histogram-tool" data-toggle="tooltip" title="Histogram">
+					    <i class="fa fa-bar-chart"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool inverse-tool" data-toggle="tooltip" title="Inverse">
+					    <i class="fa fa-adjust"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool graylevel-tool" data-toggle="tooltip" title="Gray Level">
+					    <i class="fa fa-bullseye"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool test-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-eyedropper"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-filter"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-dot-circle-o"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-eraser"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-paint-brush"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-image"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-pencil"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-picture-o"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool" data-toggle="tooltip" title="">
+					    <i class="fa fa-magic"></i>
+					</button>
+					<button class="btn btn-inverse btn-tool brightness-tool" data-toggle="tooltip" title="Brightness" rel="popover">
+					 	<i class="fa fa-sun-o"></i>
+					 	<div class="bs"></div>
+					 </button>
+					<button class="btn btn-inverse btn-tool threshold-tool" data-toggle="tooltip" title="Threshold" rel="popover">
+					 	<i class="fa fa-eyedropper"></i>
+					 	<div class="us"></div>
+					 </button>
+				</div>
+			</div>
+			<div class="col-xs-9" id="drop_zone">
+				<img src="" id="imgDisplay"/>
+				<canvas id="canvas"></canvas>
+			</div>
+			<div class="col-xs-2" id="right_bar">
+				<span>HISTOGRAM</span>
+			    <canvas id="histogram_canvas" width="200" height="100"></canvas>
+			    <p id="coords"></p>
+			</div>
+		<div>
+	</div>
+
+	<div class="modal fade" id="testmodal" tabindex="-1" role="dialog" aria-labelledby="testmodal" aria-hidden="true">
+		<div class="modal-dialog">
+        	<div class="modal-content">
+		        <div class="modal-header">
+		            
+		            <h3>Modal header</h3>
+		        </div>
+
+		        <div class="modal-body">
+		            <p>Modal content</p>
+		        </div>
+
+		        <div class="modal-footer">
+		            <a href="#" class="btn">OK</a>
+		        </div>
+		    </div>
+		</div>
+    </div>
+
+
+	<!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+	<script src="js/vendor/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/flat-ui.min.js"></script>
+
+	<!-- bootbox code -->
+    <script src="js/bootbox.js"></script>
+    <script>
+        $(document).on("click", ".about-imgx", function(e) {
+            bootbox.alert("Designed & Developed by jankrloz © ® 2014", function() {
+                console.log("Alert Callback");
+            });
+        });
+    </script>
+
+    <script src="js/Chart.js"></script>
+
+	<script src="js/script.js"></script>
+	<script src="js/drag.js"></script>
+	<script src="js/displayImage.js"></script>
+	<script src="js/workspace.js"></script>
+	<script src="js/basic.js"></script>
+	<script src="js/histogram.js"></script>
+
+</body>
+</html>

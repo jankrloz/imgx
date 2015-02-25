@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chart.js demo</title>
+        <!-- import plugin script -->
+        <script src='js/Chart.js'></script>
+    </head>
+    <body>
+        <!-- line chart canvas element -->
+        <canvas id="histogram_canvas" width="1024" height="400"></canvas>
+       
+        <script>
+            var hist_data = JSON.parse(localStorage["histogram_data"]);
+            hist_data.shift();
+            hist_data.pop();
+
+            var hist_labels = [];
+
+            for (i = 0; i < 256; i++) { 
+                hist_labels.push("");
+            }
+
+            // line chart data
+            var buyerData = {
+                labels : hist_labels,
+                datasets : [
+                {
+                    fillColor : "#000",
+                    strokeColor : "#000",
+                    pointColor : "#000",
+                    pointStrokeColor : "#000",
+                    data : hist_data
+                }
+            ]
+            }
+            // get line chart canvas
+            var histogram_canvas = document.getElementById('histogram_canvas').getContext('2d');
+            // draw line chart
+            new Chart(histogram_canvas).Bar(buyerData, {
+                scaleGridLineWidth : 1,
+                barShowStroke : true,
+                barStrokeWidth : 1,
+                barValueSpacing : 3,
+            });
+            
+        </script>
+    </body>
+</html>
